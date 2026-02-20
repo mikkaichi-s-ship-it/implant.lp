@@ -53,6 +53,18 @@
             },
         }
     </script>
+    <!--
+        ================================
+        【画像について】
+        現在、Unsplash / Pexels のフリー素材を使用しています。
+        実際の運用時は、以下の日本の無料素材サイトから
+        日本人モデル・日本国内の歯科医院写真に差し替えることを推奨します：
+        - ぱくたそ: https://www.pakutaso.com/
+        - 写真AC: https://www.photo-ac.com/
+        - model.foto: https://model-foto.jp/
+        - GIRLY DROP: https://girlydrop.com/
+        ================================
+    -->
     <style>
         html { scroll-behavior: smooth; }
         body { font-family: 'Noto Sans JP', sans-serif; color: #1e3354; }
@@ -60,6 +72,7 @@
         .hero-bg {
             background: linear-gradient(135deg, rgba(12,26,46,0.82) 0%, rgba(30,51,84,0.65) 50%, rgba(58,90,140,0.50) 100%),
                         url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            background-color: #152642;
         }
         .concern-card { position: relative; overflow: hidden; border-radius: 0.75rem; }
         .concern-card .overlay {
@@ -70,6 +83,7 @@
         .concern-card img {
             position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
             transition: transform 0.5s ease;
+            background-color: #1e3354;
         }
         .concern-card:hover img { transform: scale(1.08); }
         .concern-card .content { position: relative; z-index: 2; }
@@ -215,72 +229,72 @@
                 </p>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-                <!-- Concern 1 -->
+                <!-- Concern 1: 歯が抜けて困っている → 歯科レントゲン・診察イメージ -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.pexels.com/photos/3845683/pexels-photo-3845683.jpeg?auto=compress&cs=tinysrgb&w=600" alt="歯科診察" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-tooth text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">歯が抜けて<br>困っている</p>
                     </div>
                 </div>
-                <!-- Concern 2 -->
+                <!-- Concern 2: 人前で笑えない → 口元を隠す女性 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="口元を気にする女性" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-face-sad-tear text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">恥ずかしくて<br>人前で笑えない</p>
                     </div>
                 </div>
-                <!-- Concern 3 -->
+                <!-- Concern 3: 食事が楽しめない → 日本の食事風景 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="食事" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-utensils text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">食事が<br>楽しめない</p>
                     </div>
                 </div>
-                <!-- Concern 4 -->
+                <!-- Concern 4: 口腔内がボロボロ → 歯科治療 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="歯科治療" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-heart-crack text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">口腔内が<br>ボロボロになっている</p>
                     </div>
                 </div>
-                <!-- Concern 5 -->
+                <!-- Concern 5: 入れ歯が合わない → 高齢者の不安 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="入れ歯の悩み" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-face-frown-open text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">入れ歯が<br>合わない・痛い</p>
                     </div>
                 </div>
-                <!-- Concern 6 -->
+                <!-- Concern 6: インプラントが怖い → 歯科チェア -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.pexels.com/photos/6529110/pexels-photo-6529110.jpeg?auto=compress&cs=tinysrgb&w=600" alt="歯科治療への不安" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-shield-halved text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">インプラントに<br>興味があるが怖い</p>
                     </div>
                 </div>
-                <!-- Concern 7 -->
+                <!-- Concern 7: 他の医院で断られた → 歯科診療 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.pexels.com/photos/5355715/pexels-photo-5355715.jpeg?auto=compress&cs=tinysrgb&w=600" alt="歯科診療" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-hand text-gold-400 text-2xl md:text-3xl mb-3"></i>
                         <p class="text-white font-bold text-sm md:text-base leading-relaxed">他の医院で<br>断られた</p>
                     </div>
                 </div>
-                <!-- Concern 8 -->
+                <!-- Concern 8: 健康な歯を残したい → 笑顔 -->
                 <div class="concern-card aspect-[4/3] md:aspect-square">
-                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="" loading="lazy">
+                    <img src="https://images.pexels.com/photos/6627574/pexels-photo-6627574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="健康な歯" loading="lazy">
                     <div class="overlay"></div>
                     <div class="content flex flex-col items-center justify-center h-full p-4 text-center">
                         <i class="fa-solid fa-sparkles text-gold-400 text-2xl md:text-3xl mb-3"></i>
@@ -479,8 +493,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=400&q=80"
-                                         alt="カウンセリング" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/6627424/pexels-photo-6627424.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="カウンセリング" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">カウンセリング</h3>
@@ -501,8 +515,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&q=80"
-                                         alt="精密検査" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/3845683/pexels-photo-3845683.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="精密検査" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">精密検査・診断</h3>
@@ -523,8 +537,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=400&q=80"
-                                         alt="治療計画の説明" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/6627570/pexels-photo-6627570.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="治療計画の説明" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">治療計画の説明</h3>
@@ -545,8 +559,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=400&q=80"
-                                         alt="インプラント手術" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/6529110/pexels-photo-6529110.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="インプラント手術" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">インプラント手術</h3>
@@ -567,8 +581,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&q=80"
-                                         alt="経過観察" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/6812570/pexels-photo-6812570.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="経過観察" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">骨との結合期間・経過観察</h3>
@@ -589,8 +603,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1629909615957-be38d6a2db91?auto=format&fit=crop&w=400&q=80"
-                                         alt="被せ物の装着" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/12745979/pexels-photo-12745979.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="被せ物の装着" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">被せ物の装着</h3>
@@ -611,8 +625,8 @@
                         <div class="flex-1 bg-white rounded-2xl shadow-sm overflow-hidden">
                             <div class="md:flex">
                                 <div class="md:w-1/3">
-                                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=400&q=80"
-                                         alt="定期メンテナンス" class="w-full h-48 md:h-full object-cover" loading="lazy">
+                                    <img src="https://images.pexels.com/photos/3779706/pexels-photo-3779706.jpeg?auto=compress&cs=tinysrgb&w=400"
+                                         alt="定期メンテナンス" class="w-full h-48 md:h-full object-cover bg-navy-100" loading="lazy">
                                 </div>
                                 <div class="p-6 md:w-2/3">
                                     <h3 class="font-heading text-lg md:text-xl font-bold text-navy-800 mb-2">定期メンテナンス</h3>
